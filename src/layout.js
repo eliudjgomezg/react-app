@@ -1,11 +1,13 @@
 import React from 'react'
 import { Switch, Route } from "react-router-dom"
+
 import GeneradorDeExcusas from './generador_de_escusas'
 import Contador from './contador'
 import Home from './home'
 import FormularioContacto from './formulario_contacto'
 import ContadorYFormulario from './contadorYFormulario'
-import TodoEditable from './padre'
+import TodoEditable from './todo_editable'
+
 
 const Layout = () => {
     return (
