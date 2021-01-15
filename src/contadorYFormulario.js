@@ -10,7 +10,7 @@ function ContadorYFormulario() {
     const [limit, setLimit] = useState('')
     //Funcion que captura lo que se escribe en el input a travez del evento onChange y su parametro e.target.value
     const handleChange = (e) => {
-        setInput(e.target.value)
+        console.log(e.target.value)
     }
     //Funcion que setea el valor de input al state limit
     const handleSubmit = (e) => {
@@ -35,7 +35,7 @@ function ContadorYFormulario() {
                         <div className="form-group">
                             <div className="form-group">
                                 <label for="exampleInputPassword1">Ingrese limite del contador </label>
-                                <input className="form-control" type='number' onChange={handleChange} value={input} />
+                                <input className="form-control" type='number' onChange={handleChange} />
                             </div>
                         </div>
                         <button type="submit" className="btn btn-primary">Guardar</button>
